@@ -1,16 +1,12 @@
 <?php
+    
     if(file_exists('jdf.php'))
     {
-        require_once("jdf.php");
+        require_once(__DIR__."\jdf.php");
     }
     else{
-        $url=
-        $start = curl_init();
-        curl_setopt($start, CURLOPT_URL, $url);
-        curl_setopt($start, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($start, CURLOPT_SSLVERSION, 3);
-        $file_data = curl_exec($start);
-
+       exec("wget https://raw.githubusercontent.com/masoudniki/Jcal/master/jdf.php --output jdf.php");
+       require_once(__DIR__.'\jdf.php');
     }
    
     
