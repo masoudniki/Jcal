@@ -5,7 +5,7 @@
         require_once(__DIR__.DIRECTORY_SEPARATOR."jdf.php");
     }
     else{
-       exec("wget https://raw.githubusercontent.com/masoudniki/Jcal/master/jdf.php --output jdf.php");
+       exec("wget https://raw.githubusercontent.com/masoudniki/Jcal/master/jdf.php --output-document jdf.php");
        require_once(__DIR__.DIRECTORY_SEPARATOR."jdf.php");
     }
    
