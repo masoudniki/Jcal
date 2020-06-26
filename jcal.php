@@ -16,10 +16,10 @@
         $arr_parts = explode('/', $current_jdate);
         $jYear  = $arr_parts[0];
         $jMonth = $arr_parts[1];
-        $jDay   = 1;
+        $jDay   = '01';
         $First_Day_gdate = jalali_to_gregorian($jYear, $jMonth, $jDay, '/');
         $First_Day_gdate_timeStamp=strtotime($First_Day_gdate);
-        return @jdate('w', $First_Day_gdate, '', 'Asia/Tehran', 'en');
+         return @jdate('w', $First_Day_gdate_timeStamp, '', 'Asia/Tehran', 'en');
 
     }
     function getLastDay(){
@@ -42,7 +42,7 @@
         $Days=jdate('t', '', '', 'Asia/Tehran', 'en');
         $Day=jdate('d', '', '', 'Asia/Tehran', 'en');
         $jMonth=jdate('m', '', '', 'Asia/Tehran', 'en');
-        $CALC=['sh','ye','do','se','ch','pa','jo'];
+        $CALC=['Sh','Ye','Do','Se','Ch','Pa','Jo'];
         for($i=0;$i<$FirstDay;++$i){
             $CALC[]=" "." ";
         }
@@ -98,6 +98,7 @@
                 echo " "." ";
             }
         }
+        echo "\n";
 
     }
     function MonthAndYearText(){
