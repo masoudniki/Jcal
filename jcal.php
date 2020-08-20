@@ -1,6 +1,4 @@
 <?php
-	    //created by masoud niki 
-//test
     if(file_exists('jdf.php'))
     {
         require_once(__DIR__.DIRECTORY_SEPARATOR."jdf.php");
