@@ -1,7 +1,6 @@
 {
     "name": "masoudniki/jcal",
     "description": "simple jcal calender in terminal written with php",
-    "type": "composer-plugin",
     "license": "mit",
     "authors": [
         {
