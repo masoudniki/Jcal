@@ -7,7 +7,7 @@
 ## installation 
 easily install it with composer: 
 ```php 
-composer require -g masoudniki/jcal
+composer global require  masoudniki/jcal
 ```
 then if you did not add composer to your path run command below:
 ```php
