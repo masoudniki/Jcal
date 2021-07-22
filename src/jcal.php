@@ -103,16 +103,7 @@
         {
             echo " "; 
         }
-        echo "\n";    }
+        echo "\n";
+    }
     
-    PrintCalc(create_array());
 
-
-
-
-
-
-
-
-
-?>

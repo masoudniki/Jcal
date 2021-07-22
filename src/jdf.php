@@ -1,17 +1,8 @@
-<?php /* In the name of Allah = بسم اللّه الرّحمن الرّحیم */
+<?php
 
-/**
- * @فارسی : توابع زمان و تاریخ هجری شمسی (جلالی) در پی اچ پی
- * @name: Hijri_Shamsi,Solar(Jalali) Date and Time Functions
- * @Author : Reza Gholampanahi & WebSite : http://jdf.scr.ir
- * @License: GNU/LGPL _ Open Source & Free : [all functions]
- * @Version: 2.75 =>[ 1399/03/18 = 1441/10/15 = 2020/06/07 ]
- */
-
-/*	F	*/
 function jdate($format, $timestamp = '', $none = '', $time_zone = 'Asia/Tehran', $tr_num = 'fa') {
 
-  $T_sec = 0;/* <= رفع خطاي زمان سرور ، با اعداد '+' و '-' بر حسب ثانيه */
+  $T_sec = 0;
 
   if ($time_zone != 'local') date_default_timezone_set(($time_zone === '') ? 'Asia/Tehran' : $time_zone);
   $ts = $T_sec + (($timestamp === '') ? time() : tr_num($timestamp));
