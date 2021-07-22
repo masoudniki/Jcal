@@ -1,0 +1,22 @@
+{
+    "name": "masoudniki/jcal",
+    "description": "simple jcal calender in terminal written with php",
+    "type": "composer-plugin",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Masoud",
+            "email": "Masoud.niki79@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/jcal"
+    ],
+    "autoload": {
+        "files": [
+            "src/jcal.php",
+            "src/jdf.php"
+        ]
+    },
+    "require": {}
+}
