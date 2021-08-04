@@ -11,11 +11,11 @@ composer global require  masoudniki/jcal
 ```
 then if you did not add composer to your path run command below:
 ```php
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="$PATH:$HOME/composer/vendor/bin"
 ```
 if command up did not work run this one:
 ```php 
-export PATH="$PATH:$HOME/.config/.composer/vendor/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ```
 ## how to use it?
 just run ```jcal``` in your terminal
